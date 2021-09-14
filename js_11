@@ -1,0 +1,15 @@
+function arrDifference (arr1, arr2) {
+	let sum1 = arrMultiply(arr1);
+	let sum2 = arrMultiply(arr2);
+	return sum1 > sum2 ? sum1 - sum2 : sum2 - sum1;
+}
+
+function arrMultiply (arr) {
+ let sum = 1;
+   for (let i = 0; i < arr.length; i++) {
+	   sum = sum * arr[i];
+	   }
+ return sum;
+};
+arrDifference ([15, 20, 25], [10, 30, 25]);
+
