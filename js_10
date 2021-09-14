@@ -1,0 +1,11 @@
+function favouriteNames (arr) {
+const unwantedNames = ['Dima', 'Sasha', 'Olga', 'Nikita'];
+let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (unwantedNames.indexOf(arr[i]) === -1) {
+         newArr.push(arr[i]);
+         }
+    }
+return newArr;
+};
+favouriteNames(['Alexey', 'Semyon', 'Vasilisa', 'Dima', 'Maxim', 'Olga',]);
