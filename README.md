@@ -1,2 +1,2 @@
 # JavaScriptPractice
-The solved tasks of the JS trainee level
+The solved tasks of the JS Beginner Level
