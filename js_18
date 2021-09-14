@@ -1,0 +1,9 @@
+function spacey (arr) {
+let sum = '';
+let newArr = [];
+ for (let i = 0; i < arr.length; i++) {
+       newArr.push(sum = sum + arr[i]);
+ }
+return newArr;
+};
+spacey (['this', 'cheese', 'has', 'no', 'holes']);
