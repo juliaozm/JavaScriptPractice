@@ -1,0 +1,14 @@
+let x = parseInt(prompt ("Please type in the first number"));
+let y = parseInt(prompt ("Please type in the second number"));
+let sum = x + y;
+let mult = x * y;
+function checkNumbers (x, y) {
+   if (x > y ) {
+    return `${x} + ${y} = ` + sum;
+   } else if (x < y) {
+    return `${x} * ${y} = ` + mult;
+   } else if ( x === y) {
+     return `${x} и ${y} are equal!`;
+   }
+}
+alert(checkNumbers(x, y));
