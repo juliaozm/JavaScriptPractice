@@ -1,0 +1,13 @@
+function divisibleByThree (str) {
+let numArray = str.split('');
+let sum = 0;
+	for (let i = 0; i < numArray.length; i++) {
+		 sum = sum + parseInt(numArray[i]);
+	}
+  if (Number.isInteger(sum / 3) === true) {
+      return true;
+    } else {
+      return false;
+    }
+};
+divisibleByThree ('19254');
