@@ -1,0 +1,11 @@
+function firstNum (arr) {
+let newArr = [];
+let str = arr.toString().split(',');
+for (let i = 0; i < str.length; i++) {
+   if (str[i].charAt(0) == 1 || str[i].charAt(0) == 2 || str[i].charAt(0) == 5) {
+     newArr.push(str[i]) 
+   };  
+};
+return newArr;
+};
+alert(firstNum([10, 20, 32, 22, 30, 55, 50, 235, 75, 3000]));
