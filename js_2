@@ -1,2 +1,2 @@
 let str = 'HTML';
-str.toLowerCase(); //"html
+console.log(str.toLowerCase()); //"html
