@@ -1,0 +1,12 @@
+function strCounter (str, num) {
+str = str.replace(/[,.]/g, ' ');
+arr = str.split(" "); 
+let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].length > num) {
+       newArr.push(arr[i]);
+    }
+  }
+return newArr;
+};
+strCounter('Above the city are clouds, corridors, banks, avenues, rivers.', 6);
