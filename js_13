@@ -1,0 +1,22 @@
+function hexToDec(hex) {
+const HEX_LIST = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+hex = hex.replace(/[-]/g, '');
+hex = hex.toUpperCase();
+let arrFromHex = hex.split(""); // from str to array
+let numOrder = [];
+let sum = 0;
+  for (let i = 0; i < arrFromHex.length; i++) { 
+   	if (isNaN(arrFromHex[i]) === true) {
+   		 let arr = (HEX_LIST.indexOf(arrFromHex[i]));
+   		 numOrder.push(arr); 
+    } else {
+   		numOrder.push(parseInt(arrFromHex[i])); 
+  	}
+  }
+ numOrder.reverse();
+ for (let j = numOrder.length - 1; j >= 0; j--) {
+   sum += (numOrder[j] * Math.pow(16, j));
+ }
+return sum;
+};
+hexToDec('-C');
