@@ -10,5 +10,5 @@ let SecondNumber = 2;
 alert(nullNumber);
 console.log(first_number);
 
-//alert выводит модальное окно, которое надо закрыть, чтобы продолжить работу в браузере. 
-//console.log выводит значение в консоль
+//alert displays a modal window that needs to be closed in order to be able to continue using a browser.
+//console.log prints the value to the console
