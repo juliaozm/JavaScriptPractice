@@ -1,0 +1,8 @@
+function remove (str, n) {
+let finalStr = str;
+ 	for(let i = 0; i < n; i++) {
+ 		finalStr = finalStr.replace('!', "")
+ 	}
+ return finalStr;
+};
+remove("!!!!!!Hi !!!!hi!!!!! !hi", 100);
