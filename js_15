@@ -1,0 +1,9 @@
+function maxDiff (arr) {
+ if ((arr.length === 0) || (arr.length === 1)) {
+   return 0;
+ } else {
+   let arrSorted = arr.sort((a, b) => a - b );
+   return arrSorted[arrSorted.length-1] - arrSorted[0];
+  }
+};
+maxDiff ([1, 2, 3, -4]);
